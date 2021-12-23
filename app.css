@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color:hsl(185, 41%, 84%);
+    
+}
+body header{
+    text-align: center;
+    margin-top: 12vh;
+}
+.contain{
+    width: 600px;
+    align-items: center;
+    background-color:hsl(0, 0%, 100%);
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.side1{
+    width: 50%;
+    background: inherit;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.side1 p{
+    color: hsl(184, 14%, 56%);
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.side1 .page{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.side2{
+    background: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 50%;
+    margin: auto 10px;
+}
+.billbin{
+    position: relative;
+}
+.billbin img{
+    position: absolute;
+    left : 5%;
+    top: 30%;
+
+}
+input[type='number']{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 5px;
+    font-weight: 500;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    text-align: end;
+    padding: 5px;
+}
+input[type='number']:hover{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+.ppl{
+    position: relative;
+}
+.ppl img{
+    position: absolute;
+    left : 5%;
+    top: 30%;
+
+}
+input[type='text']{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 5px;
+    font-weight: 500;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    text-align: end;
+    padding: 5px;
+}
+input[type='text']:hover{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+.btn{
+    width: 90%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btn button{
+    padding: 5px 15px;
+    margin: 5px;
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    text-align: justify;
+}
+.btn button:hover{
+    background-color: hsl(172, 67%, 45%);
+    
+}
+.btn .cus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+    font-size: 13px;
+    cursor: pointer;
+    border:1px solid hsl(189, 41%, 97%) ;
+}
+.tip-con{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    height: 13vh;
+}
+.tip-con .val{
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+.tip-con .pan{
+    color: hsl(0, 0%, 100%);
+}
+.tip-con p{
+    color: hsl(184, 14%, 56%);
+}
+.rst{
+    text-align: center;
+}
+#reset{
+    padding:7px 20px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 15px 5px;
+    background-color: hsl(172, 67%, 45%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.side1 .error{
+    color:red ;
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 14px;
+    display: none;
+}
+.maincustom{
+    width: 100%;
+    overflow: hidden;
+}
+.side1 .classerro{
+    border: 2px solid red;
+    color: cornsilk;
+    background-color: rgb(255, 218, 218);
+}
+ @media screen and  (max-width:768px){
+    .contain{
+        width: auto;
+        display: flex;
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: none;
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    input[type='number']{
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        margin: 5px;
+        font-weight: 500;
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(185, 41%, 84%);
+        text-align: end;
+        padding: 5px;
+    }
+    .btn{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .side1{
+        width: 90%;
+    }
+    .side2{
+        background: hsl(183, 100%, 15%);
+        border-radius: 10px;
+        padding: 20px 10px;
+        width: 90%;
+        margin: auto 10px;
+    }
+ }

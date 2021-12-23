@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./app.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="app.js" defer></script>
+  <title> Tip calculator app</title>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="">
+  </header>
+
+  <div class="contain">
+    <div class="side1">
+      <p>Bill</p>
+      <div class="billbin">
+        <img src="./images/icon-dollar.svg" alt="icon-dollar" class="dolla">
+        <input type="number" id="bill" placeholder="0" min="0">
+      </div>
+      
+
+      <p>Select tips %</p>
+      <div class="btn">
+        <button onclick="fivePercent()" class="five"> 5%</button>
+        <button onclick="tenPercent()" class="ten">10%</button>
+        <button onclick="fifteenPercent()" class="fifteen">15%</button>
+        <button onclick="twentyFivePercent()" class="teln"> 25%</button>
+        <button onclick="ffityPercent()" class="fifty">50%</button>
+        <input type="number" class="cus" placeholder="custom" min="0" oninput="customFunction()">
+      </div>
+      <div class="page">
+        <p>Number of people</p> <p class="error">can't be zero</p>
+      </div>
+      <div class="ppl">
+        <img src="./images/icon-person.svg" alt="icon-person">
+      <input type="number" id="people" placeholder="0" min="0"> 
+      </div>
+      
+    </div>
+    <div class="side2">
+      <div class="tip-con">
+        <div>
+          <p class="pan">Tip Amount</p>
+          <p>/person</p>
+        </div>
+        <div>
+          <p class="val" id="val">$0.00</p>
+        </div>
+      </div>
+      <div class="tip-con">
+        <div>
+          <p class="pan">Tip Total</p>
+          <p>/person</p>
+        </div>
+        <div>
+          <p class="val" id="val2">$0.00</p>
+        </div>
+      </div>
+      <div class="rst">
+        <button id="reset" onclick="reset()"> reset</button>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
